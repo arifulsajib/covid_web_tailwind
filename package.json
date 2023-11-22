@@ -78,7 +78,7 @@
     "yaml": "^2.3.4"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./public/css/styles.css --watch"
+    "build": "npx tailwindcss -i ./src/input.css -o ./docs/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",

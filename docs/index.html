@@ -9,7 +9,33 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <h1 class="text-2xl text-blue-500 font-bold">Sajib</h1>
+  <body class="bg-green-400">
+    <header class="bg-[#ffffff30]">
+      <nav class="flex items-center justify-between px-8 h-16">
+        <!-- logo -->
+        <a href="#"><img class="scale-75" src="./images/logo.png" alt="" /></a>
+        <!-- nav items -->
+        <div class="dropdown-menu absolute top-full left-0 bg-[#ffffff30] w-full flex flex-col gap-6 items-center py-2 text-lg font-bold text-[#035755]">
+          <!-- links -->
+          <ul class="flex flex-col items-center gap-6">
+            <li class="hover:text-[#fb4c47]"><a href="#">Overview</a></li>
+            <li class="hover:text-[#fb4c47]"><a href="#">Contagion</a></li>
+            <li class="hover:text-[#fb4c47]"><a href="#">Symptoms</a></li>
+            <li class="hover:text-[#fb4c47]"><a href="#">Prevention</a></li>
+          </ul>
+          <!-- buttons -->
+          <div class="flex flex-col items-center gap-6">
+            <a href="#"><button class="border-2 border-[#fb4c47] rounded-lg px-2 py-1 text-[#fb4c47] hover:bg-[#fb4c47] hover:text-[#fff]">Contact</button></a>
+          </div>
+        </div>
+        <!-- bar icon for mobile -->
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars fa-lg text-[#fb4c47]"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Js -->
+    <script src="./js/main.js"></script>
   </body>
 </html>

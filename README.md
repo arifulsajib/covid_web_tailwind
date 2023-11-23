@@ -9,7 +9,7 @@ Users will able to:
 
 ### Links
 
-- Live Site: [Tips Calculator](https://arifulsajib.github.io/covid_web_tailwind/)
+- Live Site: [Covid 19 web](https://arifulsajib.github.io/covid_web_tailwind/)
 - Code: [Github](https://github.com/arifulsajib/covid_web_tailwind)
 
 ### Built with

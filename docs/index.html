@@ -9,32 +9,126 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="bg-green-400">
-    <header class="bg-[#ffffff30]">
+  <body class="bg-green-300">
+    <!-- Color
+       redish: #fb4c47
+        greenish: #035755
+      -->
+    <header class="bg-[#ffffff50] fixed top-0 w-full z-50">
       <nav class="flex items-center justify-between px-8 h-16">
         <!-- logo -->
         <a href="#"><img class="scale-75" src="./images/logo.png" alt="" /></a>
         <!-- nav items -->
-        <div class="dropdown-menu absolute top-full left-0 bg-[#ffffff30] w-full flex flex-col gap-6 items-center py-2 text-lg font-bold text-[#035755]">
+        <div class="dropdown-menu absolute left-0 max-lg:bg-[#ffffff60] w-full lg:flex flex-col gap-6 items-center py-2 text-lg font-bold text-[#035755] lg:static lg:flex-row lg:justify-end z-50 hidden">
           <!-- links -->
-          <ul class="flex flex-col items-center gap-6">
-            <li class="hover:text-[#fb4c47]"><a href="#">Overview</a></li>
+          <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-6">
+            <li class="hover:text-[#fb4c47]"><a href="#about">Overview</a></li>
             <li class="hover:text-[#fb4c47]"><a href="#">Contagion</a></li>
             <li class="hover:text-[#fb4c47]"><a href="#">Symptoms</a></li>
             <li class="hover:text-[#fb4c47]"><a href="#">Prevention</a></li>
           </ul>
           <!-- buttons -->
           <div class="flex flex-col items-center gap-6">
-            <a href="#"><button class="border-2 border-[#fb4c47] rounded-lg px-2 py-1 text-[#fb4c47] hover:bg-[#fb4c47] hover:text-[#fff]">Contact</button></a>
+            <a href="#"><button class="border-2 border-[#fb4c47] rounded-lg px-2 py-1 text-[#fb4c47] hover:bg-[#fb4c47] hover:text-[#fff] whitespace-nowrap">Contact</button></a>
           </div>
         </div>
         <!-- bar icon for mobile -->
-        <div class="toggle-btn">
+        <div class="toggle-btn lg:hidden">
           <i class="fa-solid fa-bars fa-lg text-[#fb4c47]"></i>
         </div>
       </nav>
     </header>
+    <main>
+      <!-- banner section -->
+      <section class="mt-16">
+        <div class="grid grid-cols-5 gap-2 lg:gap-0">
+          <div class="col-span-5 lg:col-span-3 lg:order-2 py-1">
+            <img class="scale-90" src="./images/banner.png" alt="" />
+          </div>
+          <div class="col-span-5 lg:col-span-2 lg:order-1 p-4 flex justify-center items-center lg:ps-12 text-center lg:text-start">
+            <div>
+              <h1 class="font-bold text-[#fb4c47] text-2xl">COVID-19 Alert</h1>
+              <h1 class="text-3xl lg:text-4xl text-[#035755] font-bold">Stay At Home Quarantine</h1>
+              <h1 class="text-3xl lg:text-4xl text-[#035755] font-bold">To Stop Corona Virus</h1>
+              <p class="text-gray-700 my-5">There is no specific medicine to prevent or treat coronavirus disease (COVID 19). People may need supportive care to .</p>
+              <a href="#"><button class="bg-[#fb4c47] rounded-xl px-4 py-2 text-[#d4d1d1] whitespace-nowrap font-bold">Let Us Help</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- About Section -->
+      <section id="about">
+        <div class="grid grid-cols-5 gap-2 lg:gap-0">
+          <div class="col-span-5 lg:col-span-3 py-1">
+            <img class="scale-90" src="./images/covid_what.png" alt="" />
+          </div>
+          <div class="col-span-5 lg:col-span-2 p-4 flex justify-center items-center lg:ps-12 text-center lg:text-start">
+            <div>
+              <h1 class="font-bold text-[#fb4c47] text-2xl">What Is Covid-19</h1>
+              <h1 class="text-2xl lg:text-3xl text-[#035755] font-bold">Coronavirus</h1>
+
+              <p class="text-gray-700 my-5"
+                >Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused a recent outbreak of respiratory illness now called COVID 19.Lauren Sauer, M.S., the director of
+                operations with the Johns Hopkins Office of Critical Event Preparedness and Response</p
+              >
+              <a href="#"><button class="bg-[#e7bebc] rounded-xl px-4 py-2 text-[#fb4c47] whitespace-nowrap font-bold">Learn More</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contagion Section -->
+      <section id="contagion" class="my-5 mx-8">
+        <h2 class="text-center text-2xl text-[#fb4c47] font-bold">Covid-19</h2>
+        <h1 class="text-center text-3xl text-[#035755] font-bold">Contagion</h1>
+        <p class="text-center text-gray-600 mt-4">Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type</p>
+        <div class="grid grid-cols-6 mt-3 gap-5">
+          <!-- card-1 -->
+          <div class="col-span-6 lg:col-span-2 border-[#ffffff10] border-b-4 hover:border-[#fb4c47] rounded-lg hover:scale-105">
+            <div class="card bg-[#ffffff50] py-5 rounded-lg shadow-lg">
+              <div class="flex justify-center items-center">
+                <img src="./images/contagion/1.png" alt="" class="w-100 max-h-60" />
+              </div>
+              <div class="py-4">
+                <h2 class="text-center text-[#035755] font-bold text-2xl">Air Transmission</h2>
+                <p class="text-center text-gray-600 mt-2 mb-4 px-8">Objectively evolve tactical expertise before extensible initiatives. Efficiently simplify</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col-span-6 lg:col-span-2 border-[#ffffff10] border-b-4 hover:border-[#fb4c47] rounded-lg hover:scale-105">
+            <div class="card bg-[#ffffff50] py-5 rounded-lg shadow-lg">
+              <div class="flex justify-center items-center">
+                <img src="./images/contagion/2.png" alt="" class="w-100 max-h-60" />
+              </div>
+              <div class="py-4">
+                <h2 class="text-center text-[#035755] font-bold text-2xl">Human Contacts</h2>
+                <p class="text-center text-gray-600 mt-2 mb-4 px-8">Washing your hands is one of thesimplest ways you can prote</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col-span-6 lg:col-span-2 border-[#ffffff10] border-b-4 hover:border-[#fb4c47] rounded-lg hover:scale-105">
+            <div class="card bg-[#ffffff50] py-5 rounded-lg shadow-lg">
+              <div class="flex justify-center items-center">
+                <img src="./images/contagion/3.png" alt="" class="w-100 max-h-60" />
+              </div>
+              <div class="py-4">
+                <h2 class="text-center text-[#035755] font-bold text-2xl">Containted Objects</h2>
+                <p class="text-center text-gray-600 mt-2 mb-4 px-8">Use the tissue while sneezing In this way, you can protect your droplets</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- symptons Section -->
+      <!-- Our responsibility Section -->
+      <!-- Live Report Section -->
+      <!-- Subscribe Section -->
+    </main>
+    <footer></footer>
     <!-- Js -->
     <script src="./js/main.js"></script>
   </body>
